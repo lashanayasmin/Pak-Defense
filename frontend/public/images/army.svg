@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Pakistan Army emblem">
+  <defs>
+    <linearGradient id="ag" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1f6d4c"/>
+      <stop offset="1" stop-color="#154532"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="92" fill="url(#ag)"/>
+  <circle cx="100" cy="100" r="86" fill="none" stroke="#e6b13c" stroke-width="2.5"/>
+  <path d="M100 30 c-20 32 -20 66 0 100 c20 -34 20 -68 0 -100 z" fill="#e6b13c" opacity="0.28"/>
+  <path d="M100 42 l9 14 17 3 -12 13 3 17 -17 -9 -17 9 3 -17 -12 -13 17 -3 z" fill="#e6b13c"/>
+  <circle cx="100" cy="60" r="4" fill="#0d2c44"/>
+  <rect x="30" y="150" width="140" height="6" rx="3" fill="#e6b13c"/>
+  <text x="100" y="185" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="2">PAKISTAN ARMY</text>
+</svg>
