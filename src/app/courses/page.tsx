@@ -18,7 +18,7 @@ export default function CoursesPage() {
       <PageHero
         eyebrow="Courses & Programs"
         title="Training built around your target"
-        description="Written tests, ISSB, physical standards, interviews — whatever stage you're at, there's a plan here for it."
+        description="Written tests, ISSB, physical standards, interviews: whatever stage you're at, there's a plan here for it."
       />
 
       {/* Programs */}

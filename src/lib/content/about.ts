@@ -14,7 +14,7 @@ export interface Person {
 export const EXPECTATIONS: Expectation[] = [
   {
     t: "Initial tests, drilled until they're boring",
-    d: "Verbal, non-verbal, academic — we run past papers and mock papers until the written test on the day feels almost routine.",
+    d: "Verbal, non-verbal, academic: we run past papers and mock papers until the written test on the day feels almost routine.",
   },
   {
     t: "ISSB psych and GTO, done properly",

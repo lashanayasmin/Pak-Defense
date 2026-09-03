@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-/** A rough, good-faith heuristic so the page is honest — see summary text on each course. */
+/** A rough, good-faith heuristic so the page is honest. See summary text on each course. */
 function eligibilityTone(course: Course): "eligible" | "conditional" {
   return course.summary.toLowerCase().includes("check") ? "conditional" : "eligible";
 }
@@ -183,7 +183,7 @@ export default async function CourseDetailPage({ params }: Props) {
               {/* Application process */}
               <Reveal direction="up">
                 <h2 className="text-2xl font-bold text-navy-900">
-                  How to apply — step by step
+                  How to apply, step by step
                 </h2>
                 <ol className="mt-4 space-y-5">
                   {course.steps.map((step, i) => (

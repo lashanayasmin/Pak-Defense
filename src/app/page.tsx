@@ -26,8 +26,8 @@ export default function Home() {
             <p className="mt-5 max-w-xl text-base leading-relaxed text-navy-100 sm:text-lg">
               We&apos;re a coaching centre in Johar Town preparing candidates
               for the Army, Navy, Air Force, military colleges and cadet
-              colleges — with mock tests, daily drill and mentors who&apos;ve
-              been through it themselves.
+              colleges. Expect mock tests, daily drill and mentors
+              who&apos;ve been through it themselves.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <ButtonLink href="/courses" size="lg">
@@ -140,7 +140,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WHY US — asymmetric, numbered, no cards */}
+      {/* WHY US: asymmetric, numbered, no cards */}
       <section className="border-y border-slate-200 bg-[#f4f1ea] py-20">
         <div className="mx-auto grid max-w-6xl gap-12 px-4 md:grid-cols-[0.8fr_1.2fr]">
           <Reveal direction="right">

@@ -39,7 +39,7 @@ export const FORCES: Force[] = [
 export const WHY_US: Reason[] = [
   {
     title: "We've sat on the other side of the table",
-    desc: "Most of our trainers are retired officers or long-time ISSB mentors. They don't teach from a book — they tell you what actually happens in the room, and how seniors expect you to behave.",
+    desc: "Most of our trainers are retired officers or long-time ISSB mentors. They don't teach from a book. They tell you what actually happens in the room, and how seniors expect you to behave.",
   },
   {
     title: "Mock tests that feel like the real thing",
@@ -47,7 +47,7 @@ export const WHY_US: Reason[] = [
   },
   {
     title: "Discipline you can't fake in ten days",
-    desc: "There's no shortcut to the board's confidence. We build your daily routine slowly — fitness, posture, handwriting, how you speak — so it sticks by the time you appear.",
+    desc: "There's no shortcut to the board's confidence. We build your daily routine slowly: fitness, posture, handwriting, how you speak, so it sticks by the time you appear.",
   },
   {
     title: "Small batches, real attention",

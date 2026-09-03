@@ -80,7 +80,7 @@ export function SiteFooter() {
           </h3>
           <p className="text-sm leading-relaxed text-slate-400">
             We are located in the heart of Johar Town, Lahore. Walk-ins and
-            consultations are welcome — call ahead to book your free session.
+            consultations are welcome, but call ahead to book your free session.
           </p>
         </div>
       </div>

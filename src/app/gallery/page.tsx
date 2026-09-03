@@ -30,7 +30,7 @@ export default function GalleryPage() {
               Want to see it in person instead?
             </h2>
             <p className="mt-2 max-w-xl text-sm leading-relaxed text-slate-600">
-              Drop by during opening hours — it&apos;s usually easier to judge a
+              Drop by during opening hours. It&apos;s usually easier to judge a
               coaching centre when you can watch a batch in session.
             </p>
           </div>

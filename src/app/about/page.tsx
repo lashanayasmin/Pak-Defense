@@ -10,7 +10,7 @@ import { EXPECTATIONS, TEAM } from "@/lib/content/about";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "About Pak Defence ISSB Coaching Centre in Johar Town, Lahore — the coaches, the method, and why students keep coming back.",
+    "About Pak Defence ISSB Coaching Centre in Johar Town, Lahore: the coaches, the method, and why students keep coming back.",
 };
 
 export default function AboutPage() {
@@ -36,7 +36,7 @@ export default function AboutPage() {
               <div className="mt-5 space-y-4 text-base leading-relaxed text-slate-600">
                 <p>
                   The academy was started in Johar Town by people who had
-                  prepared candidates for years — quietly, one student at a
+                  prepared candidates for years, quietly, one student at a
                   time. A relative would send his son, that boy would get
                   selected, and his friend would follow. Word spread faster than
                   any advertisement could have.
@@ -44,14 +44,14 @@ export default function AboutPage() {
                 <p>
                   What we noticed early on was that most candidates weren&apos;t
                   failing because they were weak. Most were failing because
-                  nobody had shown them how the ISSB actually works — what the
+                  nobody had shown them how the ISSB actually works: what the
                   psychologists are really looking for, how to carry yourself
                   in the interview, what a GTO day looks like. They went in
                   blind. We decided nobody we train would do that.
                 </p>
                 <p>
                   Six years and a few hundred students later, that&apos;s still
-                  the whole idea. No shortcuts, no false promises — just
+                  the whole idea. No shortcuts, no false promises. Just
                   preparation done properly.
                 </p>
               </div>
@@ -71,7 +71,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* How we work — plain list, no icon boxes */}
+      {/* How we work: plain list, no icon boxes */}
       <section className="border-y border-slate-200 bg-[#f4f1ea] py-20">
         <div className="mx-auto max-w-6xl px-4">
           <p className="text-sm font-semibold uppercase tracking-widest text-army-700">

@@ -16,7 +16,7 @@ export const PROGRAMS: Program[] = [
   {
     tag: "ISSB",
     title: "Full ISSB Preparation",
-    desc: "The complete run-through — psychological tests, GTO tasks, and the interview — with full mock days that mirror the real board.",
+    desc: "The complete run-through: psychological tests, GTO tasks, and the interview, with full mock days that mirror the real board.",
     features: [
       "Psychological test practice",
       "Real mock GTO days",
@@ -52,7 +52,7 @@ export const PROGRAMS: Program[] = [
   {
     tag: "Colleges",
     title: "Military & Cadet College Entry",
-    desc: "For younger students aiming at military and cadet colleges — the entry tests, interview and physical standards.",
+    desc: "For younger students aiming at military and cadet colleges: entry tests, interview and physical standards.",
     features: [
       "Entry test preparation",
       "Interview coaching",

@@ -6,7 +6,7 @@ export interface Course {
   tagline: string;
   description: string;
 
-  /** Who can apply — age, gender, education, nationality, physical. */
+  /** Who can apply: age, gender, education, nationality, physical. */
   eligibility: string[];
 
   /** Designated for men only (armed forces of Pakistan are male-only for these tracks). */
@@ -19,10 +19,10 @@ export interface Course {
   physical: string;
   nationality: string;
 
-  /** Benefits / purpose — why join. */
+  /** Benefits / purpose: why join. */
   benefits: string[];
 
-  /** Application process — ordered steps. */
+  /** Application process: ordered steps. */
   steps: string[];
 
   duration: string;
@@ -49,7 +49,7 @@ const ARMY_COURSES: Course[] = [
     name: "PMA Long Course",
     tagline: "The 2-year path to becoming a Commissioned Officer in the Pakistan Army.",
     description:
-      "Full preparation for the PMA Long Course — the standard entry for graduate commissioning into the Pakistan Army. We cover the written tests, initial evaluation, ISSB, and interview stages with real mock days.",
+      "Full preparation for the PMA Long Course, the standard entry for graduate commissioning into the Pakistan Army. We cover the written tests, initial evaluation, ISSB, and interview stages with real mock days.",
     eligibility: [
       "Pakistani male citizens (including Northern Areas & Gilgit-Baltistan).",
       "Age between 17 and 22 years at the time of the initial examination.",
@@ -74,11 +74,11 @@ const ARMY_COURSES: Course[] = [
       "Initial written test (Intelligence, Academic, and General Knowledge).",
       "Preliminary Medical Examination (PME).",
       "Initial Interview at the Army Selection & Recruitment Centre (AS&RC).",
-      "ISSB (Inter Services Selection Board) — psych, GTO and interview.",
+      "ISSB (Inter Services Selection Board): psych, GTO and interview.",
       "Final medical board and joining at PMA Kakul.",
     ],
     duration: "2 years at PMA Kakul (after selection)",
-    fee: "Free — government-funded training",
+    fee: "Free (government-funded training)",
     documents: [
       "CNIC / B-Form (original + copies)",
       "Last educational certificates & DMC",
@@ -87,14 +87,14 @@ const ARMY_COURSES: Course[] = [
       "Attested copies as per AS&RC checklist",
     ],
     summary:
-      "You are within the 17–22 age range with graduation — most likely eligible.",
+      "You are within the 17–22 age range with graduation, so you're most likely eligible.",
   },
   {
     slug: "short-service-commission",
     name: "Short Service Commission (SSC)",
-    tagline: "A shorter, specialized officer entry — technical and executive branches.",
+    tagline: "A shorter, specialized officer entry into technical and executive branches.",
     description:
-      "Preparation for the Short Service Commission intake — a focused path into specialized technical and executive branches of the Pakistan Army, typically with shorter initial commitment than the PMA Long Course.",
+      "Preparation for the Short Service Commission intake, a focused path into specialized technical and executive branches of the Pakistan Army, typically with shorter initial commitment than the PMA Long Course.",
     eligibility: [
       "Pakistani male citizens between 18 and 27 years (upper limit varies by branch).",
       "Graduation (or engineering for technical branches) from a recognised university.",
@@ -122,7 +122,7 @@ const ARMY_COURSES: Course[] = [
       "Training at the relevant branch school / PMA.",
     ],
     duration: "24 weeks of basic military training (course length varies)",
-    fee: "Free — government-funded",
+    fee: "Free (government-funded)",
     documents: [
       "CNIC / B-Form",
       "Matric, FSc/Intermediate and graduation certificates",
@@ -131,14 +131,14 @@ const ARMY_COURSES: Course[] = [
       "University transcripts (for technical branches)",
     ],
     summary:
-      "Aged 18–27 with a degree — highly likely to meet basic eligibility.",
+      "Aged 18–27 with a degree, you're highly likely to meet basic eligibility.",
   },
   {
     slug: "soldier-joining",
     name: "Soldier (General Duty)",
     tagline: "Direct entry into the ranks of the Pakistan Army.",
     description:
-      "Coaching and preparation for Soldier (General Duty) recruitment — helping young men meet the written test, physical and interview standards for enlisting in the Pakistan Army.",
+      "Coaching and preparation for Soldier (General Duty) recruitment, helping young men meet the written test, physical and interview standards for enlisting in the Pakistan Army.",
     eligibility: [
       "Pakistani male citizens.",
       "Age between 17½ and 23 years.",
@@ -166,7 +166,7 @@ const ARMY_COURSES: Course[] = [
       "Joining and basic military training.",
     ],
     duration: "Varies on role; initial training ~6 months",
-    fee: "Free — no cost to apply",
+    fee: "Free to apply",
     documents: [
       "CNIC / B-Form",
       "Matric certificate & DMC",
@@ -174,7 +174,7 @@ const ARMY_COURSES: Course[] = [
       "Passport-size photographs",
     ],
     summary:
-      "Aged 17½–23 with Matric — check height/physical before you apply.",
+      "Aged 17½–23 with Matric? Check your height and physical standards before you apply.",
   },
 ];
 
@@ -184,7 +184,7 @@ const NAVY_COURSES: Course[] = [
     name: "PN Cadet (Operation Branch)",
     tagline: "Commission as a Pakistan Navy officer in the operations/executive branch.",
     description:
-      "Preparation for the PN Cadet entry — the core commissioning path into the Pakistan Navy's Operations branch. We cover the initial tests, ISSB and naval interview stages thoroughly.",
+      "Preparation for the PN Cadet entry, the core commissioning path into the Pakistan Navy's Operations branch. We cover the initial tests, ISSB and naval interview stages thoroughly.",
     eligibility: [
       "Pakistani male citizens.",
       "Age between 16½ and 21 years (as per current PN policy).",
@@ -213,7 +213,7 @@ const NAVY_COURSES: Course[] = [
       "Final medical and joining at PNS Bahadur.",
     ],
     duration: "2 years at Pakistan Naval Academy (PNS Bahadur)",
-    fee: "Free — government-funded",
+    fee: "Free (government-funded)",
     documents: [
       "CNIC / B-Form",
       "Matric & FSc certificates",
@@ -221,14 +221,14 @@ const NAVY_COURSES: Course[] = [
       "Passport-size photographs",
     ],
     summary:
-      "Aged 16½–21 with strong FSc marks — check the exact branch requirement.",
+      "Aged 16½–21 with strong FSc marks? Check the exact branch requirement.",
   },
   {
     slug: "short-service-naval",
     name: "Navy Short Service Commission (SSC)",
-    tagline: "Specialized officer entry — technical, supply and education branches.",
+    tagline: "Specialized officer entry into technical, supply and education branches.",
     description:
-      "Coaching for the Pakistan Navy's Short Service Commission — an accelerated route into technical, supply/branches and education roles for graduates.",
+      "Coaching for the Pakistan Navy's Short Service Commission, an accelerated route into technical, supply branches and education roles for graduates.",
     eligibility: [
       "Pakistani male citizens.",
       "Age between 20 and 32 years (branch dependent).",
@@ -256,7 +256,7 @@ const NAVY_COURSES: Course[] = [
       "Training at the relevant naval training establishment.",
     ],
     duration: "24 weeks basic training + branch course",
-    fee: "Free — government-funded",
+    fee: "Free (government-funded)",
     documents: [
       "CNIC / B-Form",
       "Graduation / engineering certificates & transcripts",
@@ -264,7 +264,7 @@ const NAVY_COURSES: Course[] = [
       "Passport-size photographs",
     ],
     summary:
-      "Aged 20–32 with a degree — confirm your branch's specific age window.",
+      "Aged 20–32 with a degree? Confirm your branch's specific age window.",
   },
 ];
 
@@ -274,7 +274,7 @@ const AIRFORCE_COURSES: Course[] = [
     name: "GD Pilot (PAF)",
     tagline: "Become a fighter pilot in the Pakistan Air Force.",
     description:
-      "Intensive preparation for the PAF GD Pilot selection — covering initial tests, ISSB psych and GTO, and the demanding pilot aptitude and medical boards.",
+      "Intensive preparation for the PAF GD Pilot selection, covering initial tests, ISSB psych and GTO, and the demanding pilot aptitude and medical boards.",
     eligibility: [
       "Pakistani male citizens.",
       "Age between 17 and 22 years (as per current PAF policy).",
@@ -303,7 +303,7 @@ const AIRFORCE_COURSES: Course[] = [
       "Final medical board and interview at PAF Recruitment & Selection.",
     ],
     duration: "Approx. 5 years of flight + officer training",
-    fee: "Free — government-funded",
+    fee: "Free (government-funded)",
     documents: [
       "CNIC / B-Form",
       "Matric & FSc/A-Level certificates",
@@ -311,14 +311,14 @@ const AIRFORCE_COURSES: Course[] = [
       "Passport-size photographs",
     ],
     summary:
-      "Aged 17–22 with strong FSc — flying aptitude and medical are decisive.",
+      "Aged 17–22 with strong FSc? Flying aptitude and medical fitness are what decide it.",
   },
   {
     slug: "paf-specialist",
     name: "PAF Specialist / Support Branches",
-    tagline: "Non-pilot officers — engineering, logistics, admin and more.",
+    tagline: "Non-pilot officers: engineering, logistics, admin and more.",
     description:
-      "Preparation for PAF officer entry outside the cockpit — engineering, air defence, logistics and administration branches, ideal for graduates and engineers.",
+      "Preparation for PAF officer entry outside the cockpit: engineering, air defence, logistics and administration branches, ideal for graduates and engineers.",
     eligibility: [
       "Pakistani male citizens.",
       "Age between 18 and 26 years (branch dependent).",
@@ -345,8 +345,8 @@ const AIRFORCE_COURSES: Course[] = [
       "ISSB and selection interview.",
       "Final medical board and training at PAF Academy.",
     ],
-    duration: "Variable by branch — officer training + technical course",
-    fee: "Free — government-funded",
+    duration: "Variable by branch: officer training plus technical course",
+    fee: "Free (government-funded)",
     documents: [
       "CNIC / B-Form",
       "Graduation / engineering certificates & transcripts",
@@ -354,7 +354,7 @@ const AIRFORCE_COURSES: Course[] = [
       "Passport-size photographs",
     ],
     summary:
-      "Aged 18–26 with a degree — confirm your branch's precise eligibility.",
+      "Aged 18–26 with a degree? Confirm your branch's precise eligibility.",
   },
 ];
 
@@ -365,7 +365,7 @@ export const FORCES: Force[] = [
     shortTitle: "Army",
     tagline: "PMA Long Course, initial tests, ISSB, GTO and interview prep for commissioning.",
     description:
-      "The Pakistan Army offers multiple commissioning and rank entry paths. We prepare candidates for every stage — from the written initial tests to the ISSB and final interviews.",
+      "The Pakistan Army offers multiple commissioning and rank entry paths. We prepare candidates for every stage from the written initial tests to the ISSB and final interviews.",
     image: "/images/army.png",
     courses: ARMY_COURSES,
   },

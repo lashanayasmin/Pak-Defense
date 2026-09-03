@@ -86,7 +86,7 @@ export function ContactSection() {
         </h2>
         <p className="mt-3 text-slate-600">
           The fastest way is usually a phone call. We&apos;re in Johar Town most
-          days, so walk-ins are welcome — but call ahead so someone&apos;s free to
+          days, so walk-ins are welcome, but call ahead so someone&apos;s free to
           sit with you properly.
         </p>
 

@@ -5,7 +5,7 @@ import { ContactSection } from "@/components/contact-section";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with Pak Defence ISSB Coaching Centre — call, visit us in Johar Town Lahore, or send an enquiry.",
+    "Get in touch with Pak Defence ISSB Coaching Centre. Call, visit us in Johar Town Lahore, or send an enquiry.",
 };
 
 export default function ContactPage() {
