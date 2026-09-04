@@ -3,6 +3,7 @@ export interface Force {
   img: string;
   title: string;
   desc: string;
+  cta?: string;
 }
 
 export interface Reason {
@@ -33,6 +34,13 @@ export const FORCES: Force[] = [
     img: "/images/airforce.svg",
     title: "Pakistan Air Force",
     desc: "GD Pilot and PAF initial tests, ISSB psych and GTO tasks.",
+  },
+  {
+    slug: "colleges",
+    img: "/images/logo.svg",
+    title: "Military & Cadet Colleges",
+    desc: "PMA Kakul, Air Academy, Naval Academy and cadet colleges — who can apply and how.",
+    cta: "View colleges",
   },
 ];
 

@@ -107,7 +107,7 @@ export default function Home() {
             </Link>
           </Reveal>
 
-          <Reveal className="mt-10 grid gap-6 sm:grid-cols-3" stagger>
+          <Reveal className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4" stagger>
             {FORCES.map((f) => (
               <Link
                 key={f.title}
@@ -130,7 +130,7 @@ export default function Home() {
                   {f.desc}
                 </p>
                 <div className="mt-4 flex items-center gap-1.5 text-sm font-semibold text-army-700">
-                  View courses
+                  {f.cta ?? "View courses"}
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </div>
                 <div className="mt-4 h-0.5 w-10 bg-gold-500" />

@@ -3,7 +3,7 @@ import { SITE } from "@/lib/site";
 import { FORCES } from "@/lib/content/forces";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = ["", "/about", "/courses", "/gallery", "/contact"].map(
+  const staticRoutes = ["", "/about", "/courses", "/colleges", "/gallery", "/contact"].map(
     (path) => ({
       url: `${SITE.url}${path}`,
       lastModified: new Date(),
