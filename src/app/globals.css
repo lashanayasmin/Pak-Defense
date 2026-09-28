@@ -4,6 +4,13 @@
   --background: #fbfaf6;
   --foreground: #101820;
 
+  /* shadcn/ui component tokens (see src/components/ui) */
+  --card: #ffffff;
+  --card-foreground: var(--navy-900);
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: var(--army-600);
+
   /* Army green */
   --army-50: #f0f7f3;
   --army-100: #dcefe3;
@@ -54,11 +61,23 @@
   --gold-700: #9f581e;
   --gold-800: #82461f;
   --gold-900: #6b3b1d;
+
+  /* Rose (used only to mark female-specific entries) */
+  --rose-50: #fff1f2;
+  --rose-200: #fecdd3;
+  --rose-600: #e11d48;
+  --rose-800: #9f1239;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
 
   --color-army-50: var(--army-50);
   --color-army-100: var(--army-100);
@@ -84,12 +103,33 @@
   --color-navy-900: var(--navy-900);
   --color-navy-950: var(--navy-950);
 
+  --color-sky-50: var(--sky-50);
+  --color-sky-100: var(--sky-100);
+  --color-sky-200: var(--sky-200);
+  --color-sky-300: var(--sky-300);
+  --color-sky-400: var(--sky-400);
   --color-sky-500: var(--sky-500);
   --color-sky-600: var(--sky-600);
+  --color-sky-700: var(--sky-700);
+  --color-sky-800: var(--sky-800);
+  --color-sky-900: var(--sky-900);
+  --color-sky-950: var(--sky-950);
 
+  --color-gold-50: var(--gold-50);
+  --color-gold-100: var(--gold-100);
+  --color-gold-200: var(--gold-200);
+  --color-gold-300: var(--gold-300);
   --color-gold-400: var(--gold-400);
   --color-gold-500: var(--gold-500);
   --color-gold-600: var(--gold-600);
+  --color-gold-700: var(--gold-700);
+  --color-gold-800: var(--gold-800);
+  --color-gold-900: var(--gold-900);
+
+  --color-rose-50: var(--rose-50);
+  --color-rose-200: var(--rose-200);
+  --color-rose-600: var(--rose-600);
+  --color-rose-800: var(--rose-800);
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
@@ -217,11 +257,102 @@ body {
   background-size: 100% 2px;
 }
 
+/* ---- Slow drift for the accent orbs behind a category hero ---- */
+@keyframes accent-drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(3%, -4%, 0) scale(1.12);
+  }
+}
+
+.animate-accent-drift {
+  animation: accent-drift 22s ease-in-out infinite;
+}
+
+/* ---- Card lift: a little more travel than .hover-lift, with a soft shadow ---- */
+.card-lift {
+  transition:
+    transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+.card-lift:hover {
+  transform: translateY(-6px);
+}
+
+/* ---- Card sheen: a diagonal highlight that sweeps across on hover/focus ---- */
+.card-sheen {
+  position: relative;
+  overflow: hidden;
+}
+.card-sheen::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    112deg,
+    transparent 34%,
+    rgb(255 255 255 / 0.55) 46%,
+    transparent 58%
+  );
+  opacity: 0;
+  transform: translateX(-45%);
+  transition:
+    opacity 0.45s ease,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.card-sheen:hover::after,
+.card-sheen:focus-within::after {
+  opacity: 0.9;
+  transform: translateX(45%);
+}
+
+/* The whole card is one link, so give that link a visible focus ring that
+   picks up the card's own accent colour. */
+.card-link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: -3px;
+}
+
+/* ---- Icon tile: the badge inside a card lifts and tilts on hover ---- */
+@keyframes icon-tilt {
+  0%,
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(-6deg) scale(1.06);
+  }
+}
+
+.group:hover .icon-tilt {
+  animation: icon-tilt 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ---- Count strip number ---- */
+.stat-value {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
 /* ---- Respect reduced motion ---- */
 @media (prefers-reduced-motion: reduce) {
   .reveal,
   .reveal-stagger > * {
     opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .animate-accent-drift,
+  .icon-tilt {
+    animation: none !important;
+  }
+  .card-lift:hover,
+  .card-sheen::after {
     transform: none !important;
     transition: none !important;
   }
